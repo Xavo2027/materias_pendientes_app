@@ -1,0 +1,7 @@
+Flask
+psycopg2
+pandas
+openpyxl
+Flask-Login
+Flask-WTF
+gunicorn

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Alumnos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+    <h2 class="text-center mb-4">Carga de Alumnos</h2>
+    <form method="POST" class="row g-3">
+        <!-- Campos completos -->
+        <div class="col-md-6"><label class="form-label">Email</label><input type="email" class="form-control" name="email" required></div>
+        <div class="col-md-6"><label class="form-label">DNI</label><input type="text" class="form-control" name="dni" required></div>
+        <div class="col-md-6"><label class="form-label">Apellido</label><input type="text" class="form-control" name="apellido" required></div>
+        <div class="col-md-6"><label class="form-label">Nombre</label><input type="text" class="form-control" name="nombre" required></div>
+        <div class="col-md-6"><label class="form-label">Celular</label><input type="text" class="form-control" name="celular"></div>
+        <div class="col-md-6"><label class="form-label">Celular Alternativo</label><input type="text" class="form-control" name="celular_alt"></div>
+        <div class="col-md-6"><label class="form-label">Fecha de Nacimiento</label><input type="date" class="form-control" name="fecha_nac"></div>
+        <div class="col-md-6"><label class="form-label">Cursado Anterior</label><input type="text" class="form-control" name="cursado_anterior"></div>
+        <div class="col-md-6"><label class="form-label">Turno</label><input type="text" class="form-control" name="turno"></div>
+        <div class="col-md-6"><label class="form-label">Cursa Actualmente</label><input type="text" class="form-control" name="cursa_actualmente"></div>
+        <div class="col-md-6"><label class="form-label">Institución</label><input type="text" class="form-control" name="institucion"></div>
+        <div class="col-md-6"><label class="form-label">Nombre de la Institución</label><input type="text" class="form-control" name="nombre_institucion"></div>
+        <div class="col-md-6"><label class="form-label">Localidad/Provincia</label><input type="text" class="form-control" name="localidad_provincia"></div>
+        <div class="col-md-6"><label class="form-label">Materias Totales</label><input type="text" class="form-control" name="materias_totales"></div>
+        <div class="col-md-6"><label class="form-label">Materias a Rendir</label><input type="text" class="form-control" name="materias_a_rendir"></div>
+        <div class="col-md-6"><label class="form-label">Materias</label><input type="text" class="form-control" name="materias"></div>
+        <div class="col-md-6"><label class="form-label">Preferencia de Materias</label><input type="text" class="form-control" name="preferencia_materias"></div>
+        <div class="col-md-6"><label class="form-label">Observaciones</label><input type="text" class="form-control" name="observaciones"></div>
+        <div class="col-md-6"><label class="form-label">Género</label><input type="text" class="form-control" name="genero"></div>
+        <div class="col-md-6"><label class="form-label">Egresó en FINES</label><input type="text" class="form-control" name="egreso_fines"></div>
+        <div class="col-md-6"><label class="form-label">Cursado en 2023</label><input type="text" class="form-control" name="cursado_2023"></div>
+        <div class="col-12"><button type="submit" class="btn btn-success w-100">Guardar</button></div>
+    </form>
+</body>
+</html>
