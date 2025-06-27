@@ -27,7 +27,7 @@ app.register_blueprint(alumnos_bp)
 def home():
     if "usuario" not in session:
         return redirect(url_for('auth.login'))
-    return "Bienvenido a la Gestión de Materias Pendientes"
+    return render_template('home.html')
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
