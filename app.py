@@ -3,9 +3,6 @@ from flask_login import LoginManager
 from config import Config
 
 from routes.auth import auth_bp
-from routes.coordinador import coordinador_bp
-from routes.administrativo import admin_bp
-from routes.ceo import ceo_bp
 from routes.alumnos import alumnos_bp
 
 app = Flask(__name__)
@@ -16,9 +13,6 @@ login_manager.login_view = 'auth.login'
 login_manager.init_app(app)
 
 app.register_blueprint(auth_bp)
-app.register_blueprint(coordinador_bp)
-app.register_blueprint(admin_bp)
-app.register_blueprint(ceo_bp)
 app.register_blueprint(alumnos_bp)
 
 @app.route('/')
