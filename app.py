@@ -13,6 +13,11 @@ login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
 login_manager.init_app(app)
 
+# Solución: user_loader vacío para que Flask-Login no rompa
+@login_manager.user_loader
+def load_user(user_id):
+    return None  # No se cargan usuarios desde la base, solo usamos session
+
 app.register_blueprint(auth_bp)
 app.register_blueprint(alumnos_bp)
 
