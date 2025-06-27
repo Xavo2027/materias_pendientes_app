@@ -4,6 +4,7 @@ from config import Config
 import os
 
 from routes.auth import auth_bp
+from routes.logout import logout_bp
 from routes.alumnos import alumnos_bp
 
 app = Flask(__name__)
@@ -19,6 +20,7 @@ def load_user(user_id):
     return None  # No se cargan usuarios desde la base, solo usamos session
 
 app.register_blueprint(auth_bp)
+app.register_blueprint(logout_bp)
 app.register_blueprint(alumnos_bp)
 
 @app.route('/')
