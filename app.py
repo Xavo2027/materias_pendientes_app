@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, session
 from flask_login import LoginManager
 from config import Config
+import os
 
 from routes.auth import auth_bp
 from routes.alumnos import alumnos_bp
@@ -22,4 +23,5 @@ def home():
     return "Bienvenido a la Gestión de Materias Pendientes"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000, debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
